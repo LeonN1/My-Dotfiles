@@ -1,0 +1,105 @@
+// "Dark-Minimalist" rofi theme created by LeonN
+// In order to customize this theme you can find some help by reading the manual for rofi-theme 
+
+configuration {
+  me-accept-entry: "MousePrimary";
+  me-select-entry: "";  
+}
+
+element-icon, element-text, scrollbar {
+  cursor: pointer;
+}
+
+window {
+  location : 0;             // Centered
+  width    : 35%;           
+  background-color: @bg;
+  border: 2px;
+  border-color: @bg2;
+  border-radius: 1px;
+}
+
+inputbar {
+  spacing  : 8px;
+  padding  : 10px 8px;
+  children : [ prompt, entry ];  // Show the icon and the text input bar
+  background-color: @bg;
+}
+
+prompt, entry, element-icon, element-text {
+  vertical-align: 0.5;
+}
+
+prompt {
+  color            :  #000000;
+  background-color :  @fg1;
+  padding          :  5px 15px 5px 10px;
+  border-radius    :  2px;
+}
+
+textbox {
+  padding          : 4px 8px;
+  background-color : @bg;
+}
+
+entry {
+  text-color  : @fg1;
+  placeholder : "Select an image";
+  margin: 0 0 0 2px;
+}
+
+listview {
+  border-color : @bg2;
+  border       : 2px 0 0 0;
+  padding      : 10px 4px 4px 4px;
+  lines        : 10;
+  columns      : 1;
+  scrollbar    : true;
+  fixed-height : false;
+  dynamic      : true;
+}
+
+element {
+  padding: 4px;
+}
+
+element.normal.normal,
+element.alternate.normal {
+  background-color: @bg;
+  text-color: @fg1;
+}
+
+element.normal.active,
+element.normal.urgent,
+element.alternate.active,
+element.alternate.urgent,
+element.selected.normal,
+element.selected.active,
+element.selected.urgent {
+  background-color: @bg3;
+  text-color: @fg1;
+}
+
+element.selected.normal,
+element.selected.active,
+element.selected.urgent {
+  border-color: @bg3;
+}
+
+element.normal.active,
+element.alternate.active {
+  border-color: @green;
+}
+
+element.normal.urgent,
+element.alternate.urgent {
+  border-color: @urgent;
+}
+
+scrollbar {
+  handle-width : 8px;
+  handle-color : @fg2;
+  padding      : 4px;
+}
+
+@import "themes/Dark-Minimalist.rasi"

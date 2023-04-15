@@ -1,0 +1,35 @@
+colors:
+  bright:
+    black: '#75715e'
+    blue: '#66d9ef'
+    cyan: '#a1efe4'
+    green: '#a6e22e'
+    magenta: '#ae81ff'
+    red: '#f92672'
+    white: '#f9f8f5'
+    yellow: '#f4bf75'
+  normal:
+    black: '#272822'
+    blue: '#66d9ef'
+    cyan: '#a1efe4'
+    green: '#a6e22e'
+    magenta: '#ae81ff'
+    red: '#f92672'
+    white: '#f8f8f2'
+    yellow: '#f4bf75'
+  primary:
+    background: '#171714'
+    foreground: '#f8f8f2'
+font:
+  bold:
+    family: Liberation Mono
+  italic:
+    family: Liberation Mono
+  normal:
+    family: Liberation Mono
+  size: 11
+window:
+  opacity: 0.85
+  padding:
+    x: 20
+    y: 10

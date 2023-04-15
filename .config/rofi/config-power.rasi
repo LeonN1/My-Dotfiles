@@ -1,0 +1,75 @@
+// "Dark-Minimalist" rofi theme created by LeonN
+// In order to customize this theme you can find some help by reading the manual for rofi-theme 
+
+configuration {
+  icon-theme: "Papirus-Custom";
+  me-accept-entry: "MousePrimary";
+  me-select-entry: "";  
+}
+
+element-icon, element-text {
+  cursor: pointer;
+}
+
+window {
+  location : north west;             // Aligned with the Tint2 bar
+  width    : 220px;           
+  background-color: @bg;
+  border: 2px;
+  border-color: @bg2;
+  border-radius: 1px;
+}
+
+mainbox {
+  children  : [listview];
+}
+
+element-icon, element-text {
+  vertical-align: 0.5;
+}
+
+listview {
+  padding      : 4px 4px 4px 4px;
+  scrollbar    : false;
+  fixed-height : false;
+  dynamic      : true;
+}
+
+element {
+  padding: 4px;
+}
+
+element.normal.normal,
+element.alternate.normal {
+  background-color: @bg;
+  text-color: @fg1;
+}
+
+element.normal.active,
+element.normal.urgent,
+element.alternate.active,
+element.alternate.urgent,
+element.selected.normal,
+element.selected.active,
+element.selected.urgent {
+  background-color: @bg3;
+  text-color: @fg1;
+}
+
+element.selected.normal,
+element.selected.active,
+element.selected.urgent {
+  border-color: @bg3;
+}
+
+element.normal.active,
+element.alternate.active {
+  border-color: @green;
+}
+
+element.normal.urgent,
+element.alternate.urgent {
+  border-color: @urgent;
+}
+
+@import "themes/Dark-Minimalist.rasi"

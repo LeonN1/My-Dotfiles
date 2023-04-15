@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+SS_SAVE='yes'                                    # Save screenshots? If not then it's copied to clipboard.
+SS_SVDIR="/archivos/Pictures"                    # Directory to save screenshots, "$SS_SVDIR/Screenshots".
+SS_CP2CLP='yes'                                  # Copy to clipboard? Automatically 'yes' if SS_SAVE='no'.
+SS_POINTER='no'                                  # Capture cursor (known as "pointer") in the screenshots?
+SS_QUALITY='100'                                 # 0-100, high value means high size with low compression.
+
+SS_USE_FRAME='yes'                               # Use frame in the selection (or draw) mode? (MacOS-like)         
+SS_FRAME_COLOR='auto'                            # Hexa, RGBA supports. Fill 'auto' to use dominant color.
+SS_FRAME_PADDING='15'                            # Any number value, frame-padding in pixel for all sides.
+SS_FRAME_S_OPACITY='25'                          # 0-100, shadows opacity, high value means thick shadows.
+
+SS_COUNTDOWN_SECONDS='5'                         # Any number value, how long (seconds) to capture screen.
+
+TMP_DIR='/tmp'                                   # Temporary directory

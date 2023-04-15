@@ -1,0 +1,3 @@
+terminal          "alacritty"
+file_manager      "thunar"
+web_browser       "firefox"
