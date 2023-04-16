@@ -14,7 +14,7 @@ killall tint2 dunst -q
 openbox --reconfigure 
 
 # Launch dunst
-LANG="$SYSTEM_LANG" dunst -config "${HOME}/.config/dusnt/Dark-Minimalist.dunstrc" &
+LANG="$SYSTEM_LANG" dunst -config "${DUNST_DIR}/Dark-Minimalist.dunstrc" &
 
 # Launch tint2
 LANG="$SYSTEM_LANG" tint2 -c "${TINT2_DIR}/Dark-Minimalist.tint2rc"
