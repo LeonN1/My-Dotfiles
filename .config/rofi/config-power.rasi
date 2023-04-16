@@ -13,6 +13,8 @@ element-icon, element-text {
 
 window {
   location : north west;             // Aligned with the Tint2 bar
+  x-offset: 7px;
+  y-offset: 40px;
   width    : 220px;           
   background-color: @bg;
   border: 2px;
