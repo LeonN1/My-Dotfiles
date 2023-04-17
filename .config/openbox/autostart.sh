@@ -30,4 +30,5 @@ LANG="$SYSTEM_LANG" dunst -config "${HOME}/.config/dunst/Dark-Minimalist.dunstrc
 parcellite &
 udiskie -t &
 nm-applet &
+xfce4-power-manager &
 
