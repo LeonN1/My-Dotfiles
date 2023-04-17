@@ -4,6 +4,7 @@
 configuration {
   display-drun: "";
   icon-theme: "Papirus-Custom";
+  hover-select: true;
   me-accept-entry: "MousePrimary";
   me-select-entry: "";
 }

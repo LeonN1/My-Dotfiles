@@ -2,6 +2,7 @@
 // In order to customize this theme you can find some help by reading the manual for rofi-theme 
 
 configuration {
+  hover-select: true;
   me-accept-entry: "MousePrimary";
   me-select-entry: "";  
 }
