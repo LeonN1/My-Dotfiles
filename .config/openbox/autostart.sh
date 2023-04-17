@@ -25,8 +25,7 @@ tint2 -c "${HOME}/.config/tint2/Dark-Minimalist.tint2rc" &
 
 LANG="$SYSTEM_LANG" dunst -config "${HOME}/.config/dunst/Dark-Minimalist.dunstrc" &
 
-# Tray icons
-
+# System Tray 
 parcellite &
 udiskie -t &
 nm-applet &
