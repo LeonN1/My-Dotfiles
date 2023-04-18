@@ -13,6 +13,8 @@ exec >/dev/null 2>&1
 
 . ${HOME}/.scripts/ss_var                                    # Variables used for taking screenshots
 
+SCREENSHOT_ICON="${HOME}/.icons/Gladient/screenshot.png"
+
 [ -x "$(command -v scrot)" ] || exec dunstify 'Install `scrot`!' -h string:synchronous:install-deps \
                                                                  -a "Screenshot" \
                                                                  -u low
@@ -148,7 +150,7 @@ exec >/dev/null 2>&1
         STS2='CLIPBOARD'
     fi
 
-    exec dunstify '' "<span size='small'><u>${STS1}</u><i>${STS2}</i></span>\nPicture obtained!" \
+    exec dunstify 'Screenshot' "<span size='small'><u>${STS1}</u><i>${STS2}</i></span>\nPicture obtained!" \
                   -h string:synchronous:screenshot-selection \
                   -a "Screenshot" \
                   -i "$SCREENSHOT_ICON" \

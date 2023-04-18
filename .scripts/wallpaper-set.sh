@@ -7,6 +7,8 @@ exec >/dev/null 2>&1
 
 WALLPAPERS_DIR="${HOME}/.wallpapers"
 
+WALLPAPER_ICON="${HOME}/.icons/Gladient/wallpaper.png"
+
 # List all images in the ${HOME}/.wallpapers folder
 WALLPAPER="$(for LS in "$WALLPAPERS_DIR"/*.*; do
             [ ! -f "$LS" ] || echo "${LS##*/}"
@@ -25,7 +27,7 @@ WALLPAPER="$(for LS in "$WALLPAPERS_DIR"/*.*; do
 nitrogen --force-setter=xwindows --set-zoom-fill --save "${WALLPAPERS_DIR}/${WALLPAPER}"
 
 # Display notification
-dunstify '' "<span size='larger'><u>${WALLPAPER}</u></span>\nSuccessfully applied!" \
+dunstify 'Wallpaper' "<span size='larger'><u>${WALLPAPER}</u></span>\nSuccessfully applied!" \
          -h string:synchronous:wallpaper-set \
          -a "Wallpaper" \
          -i "$WALLPAPER_ICON" \
