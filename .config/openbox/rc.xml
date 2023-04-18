@@ -457,6 +457,11 @@
         <command>~/.scripts/launch-apps.sh web_browser</command>
       </action>
     </keybind>
+    <keybind key="W-F4">
+      <action name="Execute">
+        <command>~/.config/rofi/scripts/rofi-power.sh</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <!-- Number of pixels the mouse must move before a drag begins. -->
