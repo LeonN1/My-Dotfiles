@@ -15,7 +15,15 @@ WALLPAPERS_DIR="${HOME}/.wallpapers"
 WALLPAPER_AUX=$(awk '/file/' "${HOME}/.config/nitrogen/bg-saved.cfg")
 WALLPAPER=$(basename $WALLPAPER_AUX)
 
-nitrogen --force-setter=xwindows --set-zoom-fill --save "${WALLPAPERS_DIR}/${WALLPAPER}"
+if [ -f "${HOME}/.config/nitrogen/bg-saved.cfg" ]; then
+    nitrogen --force-setter=xwindows --set-zoom-fill --save "${WALLPAPERS_DIR}/${WALLPAPER}"
+else 
+    dunstify 'Wallpaper' "<span size='larger'><u>${WALLPAPER}</u></span>\nSet a wallpaper!" \
+         -h string:synchronous:wallpaper-set \
+         -a "Wallpaper" \
+         -i "$WALLPAPER_ICON" \
+         -u low
+fi    
 
 # Set the tint2 config file 
 
