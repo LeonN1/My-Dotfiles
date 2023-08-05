@@ -11,11 +11,34 @@
     "editor.minimap.autohide": true,
     "editor.minimap.scale": 2,
     "editor.minimap.renderCharacters": false,
+	"editor.overviewRulerBorder": false,
     "workbench.iconTheme": "icons",
     "editor.minimap.enabled": false,
     "window.zoomLevel": 1,
 	"workbench.colorCustomizations": {
-		"editor.background": "#161616"
+		"editor.background": "#211f27", 
+		"activityBar.background": "#1c1b22",
+		"activityBar.border": "#00000000",
+		"activityBarBadge.background": "#ababab",
+		"activityBarBadge.foreground": "#000000",
+		"statusBar.background": "#1c1b22",
+		"statusBar.border": "#00000000",
+		"panel.background": "#1c1b22",
+		"tab.activeBorderTop": "#fafafa",
+		"tab.activeBackground": "#211f27",
+		"tab.inactiveBackground": "#1c1b22",
+		"editorGroupHeader.tabsBackground": "#1c1b22",
+		"badge.background": "#cacaca",
+		"badge.foreground": "#000000",
+		"sideBar.background": "#1c1b22",
+		"sideBar.border": "#00000000",
+		"sideBarSectionHeader.background": "#00000000",
+		"editorOverviewRuler.background": "#26242e",
+		"scrollbarSlider.background": "#3f3c4c",
+		"scrollbar.shadow": "#ff000000",
+		"breadcrumb.background": "#211f27",
+		
+
 	},
     "editor.tokenColorCustomizations": {
         "textMateRules": [{
@@ -405,5 +428,9 @@
 				"foreground": "#B267E6"
 			}
 		}]
-    }
+	},
+	"debug.toolBarLocation": "hidden",
+	"window.menuBarVisibility": "hidden",
+	"workbench.sideBar.location": "right",
+	"workbench.activityBar.visible": false
 }
