@@ -33,11 +33,12 @@ tint2 -c "${HOME}/.config/tint2/Dark-Minimalist.tint2rc" &
 
 LANG="$SYSTEM_LANG" dunst -config "${HOME}/.config/dunst/Dark-Minimalist.dunstrc" &
 
-# Initialize xxs-lock
+# Initialize light-locker
 
-{ [ -x "$(command -v xss-lock)" ] && xss-lock -q -l "${HOME}/.scripts/xss-lock-tsl.sh"; } &
+light-locker &
 
 # System Tray 
+
 parcellite &
 udiskie -t &
 nm-applet &

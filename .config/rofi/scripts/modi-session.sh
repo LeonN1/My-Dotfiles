@@ -48,7 +48,7 @@ case "${@}" in
     ;;
     "$B"     ) prompt "$B_" "${SYSTEMCTL:-loginctl} --no-ask-password reboot"
     ;;
-    "$C"     ) eval 'exec loginctl --no-ask-password lock-session >&2'
+    "$C"     ) eval 'exec light-locker-command -l' >&2
     ;;
     "$D"     ) prompt "$D_" "${SYSTEMCTL:-loginctl} --no-ask-password suspend"
     ;;
@@ -60,9 +60,7 @@ case "${@}" in
     ;;
 esac
 
-MESSAGE=" $(date +%H %M) "
-
-printf '%b\n' '\0use-hot-keys\037true' '\0markup-rows\037true' "\0message\037${MESSAGE}" \
+printf '%b\n' '\0use-hot-keys\037true' '\0markup-rows\037true' \
               "$A" "$B" "$C" "$D" "$E" "$F"
 
 exit ${?}

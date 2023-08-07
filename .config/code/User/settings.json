@@ -40,7 +40,6 @@
 		"button.background": "#32303e",
 		"button.hoverBackground": "#52525e",
 		"extensionButton.separator": "#cacaca",
-
 	},
     "editor.tokenColorCustomizations": {
         "textMateRules": [{
