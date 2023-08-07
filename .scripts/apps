@@ -1,4 +1,4 @@
 terminal          "alacritty"
 file_manager      "thunar"
 web_browser       "firefox"
-session_locker    "sleep 7s"
+

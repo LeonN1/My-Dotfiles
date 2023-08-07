@@ -21,8 +21,6 @@ alias launch_apps='${HOME}/.scripts/launch-apps.sh'
 LOGOUT_ICON="${HOME}/.icons/Gladient/logout.png"
 
 {
-    [ -z "$(joyd_music_controller status)" ] || joyd_music_controller toggle
-
     dunstctl set-paused true
 } &
 

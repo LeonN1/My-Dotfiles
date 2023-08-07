@@ -43,12 +43,12 @@ prompt()
     exit ${?}
 }
 
-case "${@}" in
+case "${@}" in  
     "$A"     ) prompt "$A_" "${SYSTEMCTL:-loginctl} --no-ask-password poweroff"
     ;;
     "$B"     ) prompt "$B_" "${SYSTEMCTL:-loginctl} --no-ask-password reboot"
     ;;
-    "$C"     ) eval 'exec loginctl --no-ask-password lock-session >&2'
+    "$C"     ) eval 'light-locker-command -l'
     ;;
     "$D"     ) prompt "$D_" "${SYSTEMCTL:-loginctl} --no-ask-password suspend"
     ;;
