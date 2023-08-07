@@ -37,8 +37,9 @@
 		"scrollbarSlider.background": "#3f3c4c",
 		"scrollbar.shadow": "#ff000000",
 		"breadcrumb.background": "#211f27",
-		
-
+		"button.background": "#32303e",
+		"button.hoverBackground": "#52525e",
+		"extensionButton.separator": "#cacaca",
 	},
     "editor.tokenColorCustomizations": {
         "textMateRules": [{
