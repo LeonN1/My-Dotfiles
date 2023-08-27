@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Dark-Minimalist
+Comment=Simple Dark theme created by LeonN
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Dark-Minimalist
+IconTheme=Papirus-Dark-Custom
+CursorTheme=Breeze
+CursorSize=24

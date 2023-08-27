@@ -1,0 +1,82 @@
+/* Custom Settings */
+
+.text-button {
+  margin-left: 3px;
+  margin-right: 3px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.text-button:checked {
+  background: #5b5b66;
+  border-radius: 2px;
+  color: #fafafa;
+
+}
+
+.text-button:hover {
+  color: #fafafa;
+  transition: 0.3s;
+}
+
+.image-button {
+  color: #fafafa;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 1px;
+  padding-right: 1px;
+  transition: 0.3s;
+  border-radius: 99px;
+}
+
+.image-button:hover {
+  background: #52525e;
+  transition: 0.3s;
+}
+
+.image-button:checked {
+  color: #fafafa;
+  background: #5b5b66;
+}
+
+.image-button:disabled {
+  color: #7e7e84;
+}
+
+.titlebar {
+  min-height: 48px;
+  box-shadow: none;
+}
+
+.termite {
+  padding: 20px;
+}
+
+.thunar #location-toolbar {
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+.thunar .standard-view.frame {
+  border-style: none;
+}
+
+.thunar .sidebar {
+  background-color: #1c1b22;
+}
+
+.thunar .sidebar .view {
+  color: #fafafa;
+  background: transparent;
+}
+
+.thunar .sidebar .view:not(:selected) {
+  background-color: transparent;
+}
+
+.thunar statusbar {
+  margin: 0 -10px;
+  padding: 0 4px;
+  border-top: 1px solid rgba(0,0,0,0);
+}
