@@ -767,7 +767,7 @@ button.suggested-action:checked:focus {
 
 button.suggested-action:checked:active {
   color: #fafafa;
-  background-image: radial-gradient(circle, rgba(91, 91, 102) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgb(91, 91, 102) 10%, transparent 0%);
 }
 
 button.suggested-action.flat {
@@ -790,7 +790,7 @@ button.suggested-action.flat:focus {
 button.suggested-action.flat:active {
   box-shadow: none;
   color: #ffffff;
-  background-image: radial-gradient(circle, rgba(91, 91, 102) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgb(91, 91, 102) 10%, transparent 0%);
 }
 
 button.suggested-action.flat:disabled {
@@ -1056,13 +1056,13 @@ modelbutton.flat:drop(active), modelbutton.flat:hover,
 .menuitem.button.flat:drop(active),
 .menuitem.button.flat:hover {
   color: #fafafa;
-  background-color: rgba(82, 82, 94);
+  background-color: rgb(82, 82, 94);
 }
 
 modelbutton.flat:focus,
 .menuitem.button.flat:focus {
   color: #fafafa;
-  background-color: rgba(82, 82, 9);
+  background-color: rgb(82, 82, 9);
 }
 
 modelbutton.flat:active,
@@ -1074,7 +1074,7 @@ modelbutton.flat:active,
 modelbutton.flat:selected,
 .menuitem.button.flat:selected {
   color: #fafafa;
-  background-color: rgba(91, 91, 102);
+  background-color: rgb(91, 91, 102);
 }
 
 modelbutton.flat arrow {
@@ -3492,7 +3492,7 @@ messagedialog .dialog-action-area button.destructive-action:not(:disabled):focus
 
 messagedialog .dialog-action-area button.destructive-action:not(:disabled):active {
   box-shadow: none;
-  background-image: radial-gradient(circle, rgba(205, 95, 95) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgb(205, 95, 95) 10%, transparent 0%);
 }
 
 filechooser .dialog-action-box {
