@@ -277,7 +277,7 @@ user_pref("browser.newtabpage.activity-stream.feeds.topsites", true);
 user_pref("browser.download.useDownloadDir", true);
 
 // Translations
-user_pref("browser.translations.enable", true);
+user_pref("browser.translations.enable", false);
 
 /****************************************************************************
  * END: BETTERFOX                                                           *
