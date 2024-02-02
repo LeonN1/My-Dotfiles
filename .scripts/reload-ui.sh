@@ -17,7 +17,11 @@ killall -9 -q parcellite \
     nm-applet \
     xfce4-power-manager
 
-openbox --reconfigure 
+# Launch bspwm
+bspc wm -r
+
+# Launch sxhkd
+pkill -USR1 -x sxhkd
 
 # Launch dunst
 LANG="$SYSTEM_LANG" dunst -config "${DUNST_DIR}/Dark-Minimalist.dunstrc" &

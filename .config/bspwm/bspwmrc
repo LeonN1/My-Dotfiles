@@ -1,14 +1,19 @@
-#!/usr/bin/env sh
+#! /bin/sh
 
-# shellcheck disable=SC3044,SC2091,SC2086
+pgrep -x sxhkd > /dev/null || sxhkd &
 
-SYSTEM_LANG="$LANG"
-export LANG='POSIX'
-exec >/dev/null 2>&1
+bspc monitor -d I II III IV V VI VII VIII IX X
 
-# This file is executed at the beggining of the X session, when Openbox loads.
-# You can use this file to initialize programs with custom configurtations.
+bspc config border_width         2
+bspc config window_gap          12
 
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+# Autostart
+
+sxhkd &
 # Set wallpaper
 
 WALLPAPERS_DIR="${HOME}/.wallpapers"
@@ -17,15 +22,15 @@ WALLPAPER=$(basename $WALLPAPER_AUX)
 
 if [ -f "${HOME}/.config/nitrogen/bg-saved.cfg" ]; then
     nitrogen --force-setter=xwindows --set-zoom-fill --save "${WALLPAPERS_DIR}/${WALLPAPER}"
-else 
+else
     dunstify 'Wallpaper' "<span size='larger'><u>${WALLPAPER}</u></span>\nSet a wallpaper!" \
          -h string:synchronous:wallpaper-set \
          -a "Wallpaper" \
          -i "$WALLPAPER_ICON" \
          -u low
-fi    
+fi
 
-# Set the tint2 config file 
+# Set the tint2 config file
 
 tint2 -c "${HOME}/.config/tint2/Dark-Minimalist.tint2rc" &
 
@@ -37,10 +42,13 @@ LANG="$SYSTEM_LANG" dunst -config "${HOME}/.config/dunst/Dark-Minimalist.dunstrc
 
 light-locker &
 
-# System Tray 
+# System Tray
 
 parcellite &
 udiskie -t &
 nm-applet &
 xfce4-power-manager &
+
+
+
 
