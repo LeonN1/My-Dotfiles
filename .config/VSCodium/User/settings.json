@@ -1,0 +1,26 @@
+{
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.external.linuxExec": "alacritty",
+    "telemetry.telemetryLevel": "off",
+    "gitlens.telemetry.enabled": false,
+    "editor.fontFamily": "'Mononoki Nerd Font', 'monospace', monospace",
+    "editor.fontSize": 15,
+    "editor.minimap.autohide": true,
+    "editor.minimap.scale": 2,
+	"editor.overviewRulerBorder": false,
+    "workbench.iconTheme": "catppuccin-mocha",
+    "debug.toolBarLocation": "hidden",
+    "workbench.sideBar.location": "right",
+    "dart.flutterSdkPath": "/home/leo/.flutter_install/flutter",
+    "editor.minimap.showSlider": "always",
+    "editor.renderWhitespace": "none",
+    "editor.minimap.enabled": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.activityBar.visible": false,
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Dark Minimalist",
+	
+}
