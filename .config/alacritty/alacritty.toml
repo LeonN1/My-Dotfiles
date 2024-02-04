@@ -1,0 +1,86 @@
+[colors.bright]
+black = "#1c1b22"
+blue = "#85bef7"
+cyan = "#85f7f1"
+green = "#96f685"
+magenta = "#f7859f"
+red = "#f67d7b"
+white = "#b9b9c0"
+yellow = "#f3eb84"
+
+[colors.cursor]
+cursor = "#d0d1d3"
+text = "#2b2a33"
+
+[colors.dim]
+black = "#1c1b22"
+blue = "#85bef7"
+cyan = "#85f7f1"
+green = "#96f685"
+magenta = "#f7859f"
+red = "#f67d7b"
+white = "#BAC2DE"
+yellow = "#f3eb84"
+
+[colors.hints.end]
+background = "#b9b9c0"
+foreground = "#2b2a33"
+
+[colors.hints.start]
+background = "#f3eb84"
+foreground = "#2b2a33"
+
+[colors.normal]
+black = "#1c1b22"
+blue = "#85bef7"
+cyan = "#85f7f1"
+green = "#96f685"
+magenta = "#f7859f"
+red = "#f67d7b"
+white = "#d0d1d3"
+yellow = "#f3eb84"
+
+[colors.primary]
+background = "#211f27"
+bright_foreground = "#e5e5e5"
+dim_foreground = "#e5e5e5"
+foreground = "#e5e5e5"
+
+[colors.search.focused_match]
+background = "#96f685"
+foreground = "#2b2a33"
+
+[colors.footer_bar]
+background = "#b9b9c0"
+foreground = "#2b2a33"
+
+[colors.search.matches]
+background = "#d0d1d3"
+foreground = "#2b2a33"
+
+[colors.selection]
+background = "#d0d1d3"
+text = "#2b2a33"
+
+[colors.vi_mode_cursor]
+cursor = "#d0d1d3"
+text = "#2b2a33"
+
+[font]
+size = 11
+
+[font.bold]
+family = "Liberation Mono"
+
+[font.italic]
+family = "Liberation Mono"
+
+[font.normal]
+family = "Liberation Mono"
+
+[window]
+opacity = 1
+
+[window.padding]
+x = 20
+y = 10
