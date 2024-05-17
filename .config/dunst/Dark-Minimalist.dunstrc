@@ -42,7 +42,7 @@ alignment = center
 markup = full
 always_run_script = true
 
-corner_radius = 3
+corner_radius = 10
 
 [urgency_low]
 timeout = 3
