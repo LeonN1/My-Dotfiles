@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 <action>
+	<icon></icon>
+	<name>Extract here</name>
+	<submenu></submenu>
+	<unique-id>1717959180743925-2</unique-id>
+	<command>/home/leo/.scripts/extraction-actions.sh extract_here %F</command>
+	<description>Extract the selected files in the current directory</description>
+	<range>*</range>
+	<patterns>*.7z;*.xz;*.bz2;*.gz;*.tar;*.zip;*.wim;*.apfs;*.a;*.arj;*.cab;*.chm;*.cpio;*.cramfs;*.dmg;*.ext;*.fat;*.gpt;*.hfs;*.ihex;*.iso;*.lzh;*.lzma;*.mbr;*.msi;*.nsis;*.ntfs;*.qcow2;*.rar;*.rpm;*.squashfs;*.udf;*.uefi;*.vdi;*.vhd;*.vhdx;*.vmdk;*.xar;*.z</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>Alacritty</icon>
+	<name>Extract in new folder</name>
+	<submenu></submenu>
+	<unique-id>1717957843732257-1</unique-id>
+	<command>/home/leo/.scripts/extraction-actions.sh extract_in_folder %F</command>
+	<description>Creates a new folder in the current directory with the name of the file and extract its contents there</description>
+	<range>*</range>
+	<patterns>*.7z;*.xz;*.bz2;*.gz;*.tar;*.zip;*.wim</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>ac-adapter</icon>
+	<name>Add files to...</name>
+	<submenu></submenu>
+	<unique-id>1717957077889824-2</unique-id>
+	<command>/home/leo/.scripts/extraction-actions.sh add_files %F</command>
+	<description>Add the selected files to a new zip files</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
 	<icon>utilities-terminal</icon>
 	<name>Open Terminal Here</name>
 	<submenu></submenu>
@@ -27,5 +65,16 @@
 	<other-files/>
 	<text-files/>
 	<video-files/>
+</action>
+<action>
+	<icon>visual-studio-code</icon>
+	<name>Open in Code</name>
+	<submenu></submenu>
+	<unique-id>1717956466510732-1</unique-id>
+	<command>code %f</command>
+	<description>Open directory in VSCode</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
 </action>
 </actions>
