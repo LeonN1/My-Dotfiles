@@ -75,4 +75,4 @@ element.alternate.urgent {
   border-color: @urgent;
 }
 
-@import "themes/dark-minimalist.rasi"
+@import "themes/Dark-Minimalist.rasi"
