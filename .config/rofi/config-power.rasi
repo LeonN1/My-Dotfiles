@@ -12,14 +12,14 @@ element-icon, element-text {
 }
 
 window {
-  location : north west;             // Aligned with the Tint2 bar
-  x-offset: 7px;
-  y-offset: 40px;
+  location : north east;
+  x-offset: -10px;
+  y-offset: 50px;
   width    : 220px;           
   background-color: @bg;
   border: 2px;
-  border-color: @bg2;
-  border-radius: 1px;
+  border-color: @border-col;
+  border-radius: 12px;
 }
 
 mainbox {
@@ -38,7 +38,8 @@ listview {
 }
 
 element {
-  padding: 4px;
+  padding: 4px 4px 4px 18px;
+  border-radius    :  4px;
 }
 
 element.normal.normal,
@@ -54,14 +55,14 @@ element.alternate.urgent,
 element.selected.normal,
 element.selected.active,
 element.selected.urgent {
-  background-color: @bg3;
+  background-color: @bg2;
   text-color: @fg1;
 }
 
 element.selected.normal,
 element.selected.active,
 element.selected.urgent {
-  border-color: @bg3;
+  border-color: @bg2;
 }
 
 element.normal.active,
@@ -74,4 +75,4 @@ element.alternate.urgent {
   border-color: @urgent;
 }
 
-@import "themes/Dark-Minimalist.rasi"
+@import "themes/dark-minimalist.rasi"

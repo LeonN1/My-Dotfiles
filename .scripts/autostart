@@ -1,0 +1,58 @@
+#! /bin/sh
+
+# Applications to start on session start
+# Intended to be called from bspwmrc or similar wm startup script
+
+# Keybindings daemon
+pkill -x sxhkd
+
+# Window compositor
+pkill -x picom
+
+# Notification daemon
+pkill -x dunst
+
+# Network manager applet
+pkill -x nm-applet
+
+# Power manager
+pkill -f xfce4-power-manager 
+
+# Clipboard manager
+pkill -f parcellite 
+
+# Power manager
+pkill -x udiskie
+
+# Session locker
+pkill -x light-locker
+
+sleep 1
+
+# launch polybar
+$HOME/.config/polybar/launch.sh &
+
+sxhkd &
+picom &
+dunst &
+nm-applet &
+xfce4-power-manager &
+parcellite &
+udiskie -t &
+light-locker &
+
+# Set wallpaper
+
+WALLPAPER_AUX=$(awk '/file/' "${HOME}/.config/nitrogen/bg-saved.cfg" | head -n 1)
+WALLPAPER=${WALLPAPER_AUX#*=}
+WALLPAPER_ICON="${HOME}/.icons/Gladient/wallpaper.png"
+
+if [ -f "${HOME}/.config/nitrogen/bg-saved.cfg" ]; then
+    nitrogen --force-setter=xwindows --set-zoom-fill --save "${WALLPAPER}"
+else
+    dunstify 'Wallpaper' "<span size='larger'><u>Set a wallpaper!</u></span>" \
+         -h string:synchronous:wallpaper-set \
+         -a "Wallpaper" \
+         -i "$WALLPAPER_ICON" \
+         -u low
+fi
