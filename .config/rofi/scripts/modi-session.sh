@@ -16,18 +16,18 @@ case "$ROFI_RETV" in
     ;;
 esac
 
-ROW_ICON_FONT='feather 12'
-MSG_ICON_FONT='feather 48'
+ROW_ICON_FONT='CaskaydiaMonoNerdFont'
+MSG_ICON_FONT='CaskaydiaMonoNerdFont'
 
-A_='' A="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${A_}</span>   Poweroff"
-B_='' B="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${B_}</span>   Reboot"
-C_='' C="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${C_}</span>   Lock"
-D_='' D="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${D_}</span>   Suspend"
-E_='' E="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${E_}</span>   Hibernate"
-F_='' F="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${F_}</span>   Logout"
-Y_='' Y="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${Y_}</span>   Confirm"
-N_='' N="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${N_}</span>   Cancel"
-Z_='' Z="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${Z_}</span>   BIOS"
+A_='' A="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${A_}</span>   Poweroff"
+B_='' B="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${B_}</span>   Reboot"
+C_='' C="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${C_}</span>   Lock"
+D_='󰤄' D="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${D_}</span>   Suspend"
+E_='󰜗' E="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${E_}</span>   Hibernate"
+F_='󰍃' F="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${F_}</span>   Logout"
+Y_='' Y="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${Y_}</span>   Confirm"
+N_='󰜺' N="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${N_}</span>   Cancel"
+Z_='' Z="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${Z_}</span>   BIOS"
 
 SYSTEMCTL="$(command -v systemctl)" # owl4ce/dotfiles #180.
 
@@ -35,10 +35,7 @@ prompt()
 {
     [ "${1}" = "$B_" ] || Z=
 
-    PROMPT="<span font_desc='${MSG_ICON_FONT}' weight='bold'>${1}</span>"
-
-    printf '%b\n' "\0message\037${PROMPT}" \
-                  "${Y}\0info\037#${2}" "$N" "${Z}\0info\037#${2} --firmware-setup"
+    printf '%b\n' "${Y}\0info\037#${2}" "$N" "${Z}\0info\037#${2} --firmware-setup"
 
     exit ${?}
 }
