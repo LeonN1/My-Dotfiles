@@ -21,6 +21,10 @@ super + b
 super + m
     ~/.config/rofi/scripts/rofi-launcher.sh
 
+# project screen
+super + p
+    ~/.scripts/project-screen-eyecandy.sh
+
 # Brightness control
 XF86MonBrightnessUp
     ~/.scripts/change-brightness.sh +
@@ -79,8 +83,8 @@ super + {t,shift + t,s,f}
 #
 
 # focus the next/previous window in the current desktop
-alt + {_,shift + }Tab
-	bspc node -f {next,prev}.local.!hidden.window
+alt + Tab
+	bspc node -f next.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
