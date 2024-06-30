@@ -2,7 +2,7 @@
 // In order to customize this theme you can find some help by reading the manual for rofi-theme 
 
 * {
-  font:   "Caskaydia Cove Nerd Font 16";
+  font:   "Cantarell Regular 16";
 
   // Background colors
   bg      : #1c1b22;

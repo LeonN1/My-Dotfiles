@@ -7,61 +7,40 @@ configuration {
   me-select-entry: "";  
 }
 
-element-icon, element-text, scrollbar {
+element-icon, element-text {
   cursor: pointer;
 }
 
 window {
-  location : 0;             // Centered
-  width    : 35%;           
+  location : north east;             // Aligned with the Tint2 bar
+  y-offset: 55px;
+  x-offset: -10px;
+  width    : 30%;     
+  height: 94%;      
   background-color: @bg;
   border: 2px;
-  border-color: @bg2;
-  border-radius: 1px;
+  border-color: @border-col;
+  border-radius: 10px;
 }
 
-inputbar {
-  spacing  : 8px;
-  padding  : 10px 8px;
-  children : [ prompt, entry ];  // Show the icon and the text input bar
-  background-color: @bg;
+mainbox {
+  children  : [listview];
 }
 
-prompt, entry, element-icon, element-text {
+element-icon, element-text {
   vertical-align: 0.5;
 }
 
-prompt {
-  color            :  #000000;
-  background-color :  @fg1;
-  padding          :  5px 15px 5px 10px;
-  border-radius    :  2px;
-}
-
-textbox {
-  padding          : 4px 8px;
-  background-color : @bg;
-}
-
-entry {
-  text-color  : @fg1;
-  placeholder : "Select an image";
-  margin: 0 0 0 2px;
-}
-
 listview {
-  border-color : @bg2;
-  border       : 2px 0 0 0;
-  padding      : 10px 4px 4px 4px;
-  lines        : 10;
-  columns      : 1;
-  scrollbar    : true;
+  padding      : 4px 4px 4px 4px;
+  scrollbar    : false;
   fixed-height : false;
   dynamic      : true;
 }
 
 element {
-  padding: 4px;
+  padding: 10.2% 0 10.3% 7%;
+  border-radius    :  4px;
 }
 
 element.normal.normal,
@@ -77,14 +56,14 @@ element.alternate.urgent,
 element.selected.normal,
 element.selected.active,
 element.selected.urgent {
-  background-color: @bg3;
+  background-color: @bg2;
   text-color: @fg1;
 }
 
 element.selected.normal,
 element.selected.active,
 element.selected.urgent {
-  border-color: @bg3;
+  border-color: @bg2;
 }
 
 element.normal.active,
@@ -96,11 +75,4 @@ element.normal.urgent,
 element.alternate.urgent {
   border-color: @urgent;
 }
-
-scrollbar {
-  handle-width : 8px;
-  handle-color : @fg2;
-  padding      : 4px;
-}
-
 @import "themes/Dark-Minimalist.rasi"
