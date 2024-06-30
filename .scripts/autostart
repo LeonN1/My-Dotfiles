@@ -18,7 +18,7 @@ pkill -x nm-applet
 # Power manager
 pkill -f xfce4-power-manager 
 
-# Clipboard manager
+# External media manager
 pkill -f parcellite 
 
 # Power manager
@@ -26,6 +26,12 @@ pkill -x udiskie
 
 # Session locker
 pkill -x light-locker
+
+# Volume icon
+pkill -x volumeicon
+
+# Microphone icon
+pkill -x mictray
 
 sleep 1
 
@@ -36,9 +42,11 @@ sxhkd &
 picom &
 dunst &
 nm-applet &
-xfce4-power-manager &
 parcellite &
 udiskie -t &
+volumeicon &
+mictray &
+xfce4-power-manager &
 light-locker &
 
 # Set wallpaper
