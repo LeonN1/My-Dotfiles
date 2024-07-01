@@ -25,13 +25,6 @@ super + m
 super + p
     ~/.scripts/project-screen-eyecandy.sh
 
-# Brightness control
-XF86MonBrightnessUp
-    ~/.scripts/change-brightness.sh +
-
-XF86MonBrightnessDown
-    ~/.scripts/change-brightness.sh -
-
 # Audio-volume control
 XF86AudioRaiseVolume
     ~/.scripts/change-volume.sh +
