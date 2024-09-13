@@ -13,8 +13,8 @@ element-icon, element-text {
 
 window {
   location : north east;
-  x-offset: -10px;
-  y-offset: 50px;
+  x-offset: -12px;
+  y-offset: 66px;
   width    : 220px;           
   background-color: @bg;
   border: 2px;
@@ -75,4 +75,4 @@ element.alternate.urgent {
   border-color: @urgent;
 }
 
-@import "themes/Dark-Minimalist.rasi"
+@import "themes/dark-minimalist.rasi"

@@ -1,0 +1,50 @@
+// "Dark-Minimalist" rofi theme created by LeonN534
+// In order to customize this theme you can find some help by reading the manual for rofi-theme 
+
+* {
+  font:   "Cantarell Regular 16";
+
+  // Palette colors
+  rosewater   : #fdddf5;
+  flamingo    : #f9aee9;
+  pink        : #f685e6;
+  mauve       : #d484f4;
+  red         : #f67d7b;
+  maroon      : #f7859f;
+  peach       : #f7a285;
+  yellow      : #f3eb84;
+  green       : #96f685;
+  teal        : #85f7cc;
+  sky         : #85f7f1;
+  sapphire    : #a7f9e2;
+  blue        : #85bef7;
+  lavender    : #abc0f9;
+  text        : #e5e5e5;
+  subtext1    : #d0d1d3;
+  subtext0    : #b9b9c0;
+  overlay2    : #9e9da9;
+  overlay1    : #868592;
+  overlay0    : #757480;
+  surface2    : #605f6b;
+  surface1    : #4d4b56;
+  surface0    : #3b3a44;
+  base        : #2b2a33;
+  mantle      : #211f27;
+  crust       : #1c1b22;
+
+  // Background colors
+  bg      : @crust;
+  bg2     : @surface1;
+
+  // Border color
+  border-col     : @overlay0;
+
+  // Font colors
+  fg1              : @text;
+  fg2              : @surface2;
+  text-color       : @fg1;
+
+  // Important colors
+  accent: @red;
+  urgent: @yellow;
+}

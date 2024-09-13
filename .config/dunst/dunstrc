@@ -20,7 +20,7 @@ gap_size = 8
 separator_color = auto
 idle_threshold = 120
 
-font = "mplus Nerd Font 10"
+font = "Cantarell-VF 10"
 
 format = "<span size='x-large' font_desc='Cantarell,mplus Nerd Font 9' weight='bold' foreground='#f9f9f9'>%s</span>\n%b"
 
@@ -30,7 +30,7 @@ min_icon_size = 48
 max_icon_size = 55
 
 enable_recursive_icon_lookup = true
-icon_theme = "Papirus-Dark-Custom"
+icon_theme = "Papirus-Dark"
 
 sticky_history = false
 

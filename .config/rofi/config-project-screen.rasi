@@ -13,10 +13,10 @@ element-icon, element-text {
 
 window {
   location : north east;             // Aligned with the Tint2 bar
-  y-offset: 55px;
-  x-offset: -10px;
+  y-offset: 66px;
+  x-offset: -12px;
   width    : 30%;     
-  height: 94%;      
+  height: 1000px;      
   background-color: @bg;
   border: 2px;
   border-color: @border-col;
@@ -39,7 +39,7 @@ listview {
 }
 
 element {
-  padding: 10.2% 0 10.3% 7%;
+  padding: 10% 0 10% 7%;
   border-radius    :  4px;
 }
 
@@ -75,4 +75,4 @@ element.normal.urgent,
 element.alternate.urgent {
   border-color: @urgent;
 }
-@import "themes/Dark-Minimalist.rasi"
+@import "themes/dark-minimalist.rasi"

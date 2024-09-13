@@ -3,6 +3,21 @@
 # Applications to start on session start
 # Intended to be called from bspwmrc or similar wm startup script
 
+result=$(xrandr --query | grep "HDMI-1-0 connected")
+
+sleep 1
+
+# Check if the variable is not empty
+if [ -n "$result" ]; then
+    ~/.screenlayout/main.sh
+    bspc monitor "%eDP-1" -d VI VII VIII IX X
+    bspc monitor "%HDMI-1-0" -d I II III IV V
+else
+    ~/.screenlayout/laptop.sh
+    bspc monitor "%eDP-1" -d I II III IV V VI VII VIII IX X
+fi
+
+
 # Keybindings daemon
 pkill -x sxhkd
 
@@ -33,6 +48,9 @@ pkill -x volumeicon
 # Microphone icon
 pkill -x mictray
 
+# Redshift 
+pkill -x redshift
+
 sleep 1
 
 # launch polybar
@@ -48,19 +66,5 @@ volumeicon &
 mictray &
 xfce4-power-manager &
 light-locker &
-
-# Set wallpaper
-
-WALLPAPER_AUX=$(awk '/file/' "${HOME}/.config/nitrogen/bg-saved.cfg" | head -n 1)
-WALLPAPER=${WALLPAPER_AUX#*=}
-WALLPAPER_ICON="${HOME}/.icons/Gladient/wallpaper.png"
-
-if [ -f "${HOME}/.config/nitrogen/bg-saved.cfg" ]; then
-    nitrogen --force-setter=xwindows --set-zoom-fill --save "${WALLPAPER}"
-else
-    dunstify 'Wallpaper' "<span size='larger'><u>Set a wallpaper!</u></span>" \
-         -h string:synchronous:wallpaper-set \
-         -a "Wallpaper" \
-         -i "$WALLPAPER_ICON" \
-         -u low
-fi
+redshift &
+nitrogen --restore &

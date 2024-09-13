@@ -2,8 +2,8 @@
 // In order to customize this theme you can find some help by reading the manual for rofi-theme 
 
 configuration {
-  display-drun: "";
-  icon-theme: "Papirus-Custom";
+  display-drun: "";
+  icon-theme: "Papirus-Dark";
   hover-select: true;
   me-accept-entry: "MousePrimary";
   me-select-entry: "";
@@ -15,11 +15,11 @@ element-icon, element-text, scrollbar {
 
 window {
   location : 0;             // Centered
-  width    : 50%;           // Fills half of the screen
+  width    : 50%;           // Fills half the screen
   background-color: @bg;
   border: 2px;
-  border-color: @bg2;
-  border-radius: 1px;
+  border-color: @border-col;
+  border-radius: 10px;
 }
 
 inputbar {
@@ -36,13 +36,14 @@ prompt, entry, element-icon, element-text {
 prompt {
   color            :  #000000;
   background-color :  @fg1;
-  padding          :  5px 12px 5px 10px;
-  border-radius    :  2px;
+  padding          :  5px 15px 5px 7px;
+  border-radius    :  4px;
 }
 
 textbox {
   padding          : 4px 8px;
   background-color : @bg;
+  text-color       : @red;
 }
 
 entry {
@@ -52,10 +53,10 @@ entry {
 }
 
 listview {
-  border-color : @bg2;
+  border-color : @border-col;
   border       : 2px 0 0 0;
   padding      : 10px 4px 4px 4px;
-  lines        : 10;
+  lines        : 7;
   columns      : 2;
   scrollbar    : true;
   fixed-height : false;
@@ -63,7 +64,8 @@ listview {
 }
 
 element {
-  padding: 4px;
+  padding          :  7px;
+  border-radius    :  4px;
 }
 
 element.normal.normal,
@@ -79,14 +81,14 @@ element.alternate.urgent,
 element.selected.normal,
 element.selected.active,
 element.selected.urgent {
-  background-color: @bg3;
+  background-color: @bg2;
   text-color: @fg1;
 }
 
 element.selected.normal,
 element.selected.active,
 element.selected.urgent {
-  border-color: @bg3;
+  border-color: @bg2;
 }
 
 element.normal.active,
@@ -105,4 +107,4 @@ scrollbar {
   padding      : 4px;
 }
 
-@import "themes/Dark-Minimalist.rasi"
+@import "themes/dark-minimalist.rasi"
